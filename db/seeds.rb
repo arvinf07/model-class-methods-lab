@@ -64,3 +64,9 @@ triton.classifications << [motorboat, bass]
 sun_tracker.classifications << [motorboat, pontoon, catamaran]
 harpoon.classifications << [sailboat, sloop]
 sunfish.classifications << [sailboat, cat_rig]
+
+
+Boat.limit(5)
+Boat.where("length<?", "20") 
+Boat.where("length>=?", "20")
+Boat.where("captain_id is NULL")
